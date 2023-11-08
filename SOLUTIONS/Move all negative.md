@@ -203,7 +203,7 @@ public:
 ```
 
 # [Rearrange an array with O(1) extra space](https://practice.geeksforgeeks.org/problems/rearrange-an-array-with-o1-extra-space3142/1)
-```c++
+```c++    
 class Solution{
     public:
     // arr: input array
@@ -211,15 +211,13 @@ class Solution{
     //Function to rearrange an array so that arr[i] becomes arr[arr[i]]
     //with O(1) extra space.
     void arrange(long long arr[], int n) {
-        vector<long long>arrange;
-        
-        for(int i = 0; i < n; i++){
-            int idx = arr[i];
-            
-            arrange.push_back(arr[idx]);
+        for(int i=0;i<n;i++){
+            arr[i]+=(arr[arr[i]]%n)*n;
+        }
+        for(int i=0;i<n;i++){
+            arr[i]/=n;
         }
         
-        for(int i = 0; i < n; i++) arr[i] = arrange[i];
     }
 };
 ```
