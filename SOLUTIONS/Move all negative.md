@@ -224,7 +224,7 @@ class Solution{
 };
 ```
 
-#[Rearrange array alternately](https://practice.geeksforgeeks.org/problems/-rearrange-array-alternately-1587115620/1)
+# [Rearrange array alternately](https://practice.geeksforgeeks.org/problems/-rearrange-array-alternately-1587115620/1)
 ```c++
 class Solution {
 public:
