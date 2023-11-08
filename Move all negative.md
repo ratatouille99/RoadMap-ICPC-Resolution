@@ -1,6 +1,6 @@
 ### Move all negative numbers to beginning and positive to end with constant extra space
 
-## [Alternate positive and negative numbers](https://practice.geeksforgeeks.org/problems/array-of-alternate-ve-and-ve-nos1401/1)
+# [Alternate positive and negative numbers](https://practice.geeksforgeeks.org/problems/array-of-alternate-ve-and-ve-nos1401/1)
 ```c++
 //User function template for C++
 class Solution{
@@ -55,7 +55,7 @@ public:
 };
 ```
 
-## [Move all negative elements to end](https://practice.geeksforgeeks.org/problems/move-all-negative-elements-to-end1813/1)
+# [Move all negative elements to end](https://practice.geeksforgeeks.org/problems/move-all-negative-elements-to-end1813/1)
 ```c++
 class Solution{
     public:
@@ -78,7 +78,7 @@ class Solution{
 };
 ```
 
-## [Arranging the array](https://practice.geeksforgeeks.org/problems/arranging-the-array1131/1)
+# [Arranging the array](https://practice.geeksforgeeks.org/problems/arranging-the-array1131/1)
 ```c++
 class Solution
 {
@@ -100,7 +100,7 @@ class Solution
 };
 ```
 
-## [Positive and negative elements](https://practice.geeksforgeeks.org/problems/positive-and-negative-elements4613/1)
+# [Positive and negative elements](https://practice.geeksforgeeks.org/problems/positive-and-negative-elements4613/1)
 ```c++
 class Solution{
   public:
@@ -124,7 +124,7 @@ class Solution{
 };
 ```
 
-## [Rearrange array such that even positioned are greater than odd](https://practice.geeksforgeeks.org/problems/rearrange-array-such-that-even-positioned-are-greater-than-odd4804/1)
+# [Rearrange array such that even positioned are greater than odd](https://practice.geeksforgeeks.org/problems/rearrange-array-such-that-even-positioned-are-greater-than-odd4804/1)
 ```c++
 class Solution{
     public:
@@ -147,7 +147,7 @@ class Solution{
 };
 ```
 
-## [Sort in specific order](https://practice.geeksforgeeks.org/problems/sort-in-specific-order2422/1)
+# [Sort in specific order](https://practice.geeksforgeeks.org/problems/sort-in-specific-order2422/1)
 ```c++
 class Solution
 {
@@ -178,7 +178,7 @@ class Solution
 };
 ```
 
-## [Move all zeroes to end of array](https://practice.geeksforgeeks.org/problems/move-all-zeroes-to-end-of-array0751/1)
+# [Move all zeroes to end of array](https://practice.geeksforgeeks.org/problems/move-all-zeroes-to-end-of-array0751/1)
 ```c++
 class Solution{
 public:
