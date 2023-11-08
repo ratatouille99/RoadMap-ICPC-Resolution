@@ -227,9 +227,8 @@ class Solution{
 class Solution {
 public:
     void rearrange(long long *arr, int n) {
-        sort(arr, arr + n); // Ordena el array en orden ascendente.
         int low = 0, high = n - 1;
-        long long max_element = arr[n - 1] + 1; // Asumimos que ningún elemento en el array es igual a max_element
+        long long max_element = arr[n - 1] + 1;
         for (int i = 0; i < n; i++) {
             if (i % 2 == 0) {
                 arr[i] += (arr[high--] % max_element) * max_element;
