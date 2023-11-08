@@ -201,3 +201,47 @@ public:
 	}
 };
 ```
+
+# [Rearrange an array with O(1) extra space](https://practice.geeksforgeeks.org/problems/rearrange-an-array-with-o1-extra-space3142/1)
+```c++
+class Solution{
+    public:
+    // arr: input array
+    // n: size of array
+    //Function to rearrange an array so that arr[i] becomes arr[arr[i]]
+    //with O(1) extra space.
+    void arrange(long long arr[], int n) {
+        vector<long long>arrange;
+        
+        for(int i = 0; i < n; i++){
+            int idx = arr[i];
+            
+            arrange.push_back(arr[idx]);
+        }
+        
+        for(int i = 0; i < n; i++) arr[i] = arrange[i];
+    }
+};
+```
+
+#[Rearrange array alternately](https://practice.geeksforgeeks.org/problems/-rearrange-array-alternately-1587115620/1)
+```c++
+class Solution {
+public:
+    void rearrange(long long *arr, int n) {
+        sort(arr, arr + n); // Ordena el array en orden ascendente.
+        int low = 0, high = n - 1;
+        long long max_element = arr[n - 1] + 1; // Asumimos que ningún elemento en el array es igual a max_element
+        for (int i = 0; i < n; i++) {
+            if (i % 2 == 0) {
+                arr[i] += (arr[high--] % max_element) * max_element;
+            } else {
+                arr[i] += (arr[low++] % max_element) * max_element;
+            }
+        }
+        for (int i = 0; i < n; i++) {
+            arr[i] /= max_element;
+        }
+    }
+};
+```
