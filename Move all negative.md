@@ -1,6 +1,6 @@
 ### Move all negative numbers to beginning and positive to end with constant extra space
 
-[Alternate positive and negative numbers](https://practice.geeksforgeeks.org/problems/array-of-alternate-ve-and-ve-nos1401/1)
+# [Alternate positive and negative numbers](https://practice.geeksforgeeks.org/problems/array-of-alternate-ve-and-ve-nos1401/1)
 ```c++
 //User function template for C++
 class Solution{
