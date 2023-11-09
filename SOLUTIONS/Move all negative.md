@@ -329,4 +329,19 @@ void radixsort(int arr[], int n)
     for (int exp = 1; m / exp > 0; exp *= 10)
         countSort(arr, n, exp);
 }
-``` 
+```
+
+# [Sort by absolute difference](https://practice.geeksforgeeks.org/problems/sort-by-absolute-difference-1587115621/1?utm_source=geeksforgeeks&utm_medium=ml_article_practice_tab&utm_campaign=article_practice_tab)
+```c++
+class Solution{
+    public:
+    
+    void sortABS(int arr[],int n, int k)
+    {
+        stable_sort(arr, arr+n, [&k](const auto &l, const auto &r){
+        return abs(l - k) < abs(r - k);
+        });
+    }
+
+};
+```
