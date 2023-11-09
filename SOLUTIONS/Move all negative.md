@@ -242,3 +242,28 @@ public:
     }
 };
 ```
+
+# [Rearrange array](https://practice.geeksforgeeks.org/problems/rearrange-the-array5802/1?utm_source=geeksforgeeks&utm_medium=ml_article_practice_tab&utm_campaign=article_practice_tab)
+```c++
+class Solution{
+  public:
+    void rearrangeArray(int arr[], int n) {
+        vector<int>aux;
+        int l = 0, r = n-1, i = 0;
+        
+        sort(arr, arr+n);
+        
+        while(l <= r){
+            aux.push_back(arr[l]);
+            aux.push_back(arr[r]);
+            r--;
+            l++;
+        }
+        
+        //if(i % 2 == 0) aux.push_back(arr[n/2])
+        
+        for(int i = 0; i < n; i++) arr[i] = aux[i];
+
+    }
+};
+```c++
