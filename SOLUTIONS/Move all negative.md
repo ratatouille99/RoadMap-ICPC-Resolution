@@ -342,6 +342,5 @@ class Solution{
         return abs(l - k) < abs(r - k);
         });
     }
-
 };
 ```
