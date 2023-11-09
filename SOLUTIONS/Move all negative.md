@@ -344,3 +344,44 @@ class Solution{
     }
 };
 ```
+
+# [Sort first half in ascending and second half in descending](https://practice.geeksforgeeks.org/problems/sort-first-half-in-ascending-and-second-half-in-descending1714/1?utm_source=geeksforgeeks&utm_medium=ml_article_practice_tab&utm_campaign=article_practice_tab)
+```c++
+class Solution{
+  public:
+    void customSort(int arr[], int n) {
+        vector<int>aux;
+        
+        sort(arr,arr + n/2);
+        
+        for(int i = (n/2); i < n; i++) aux.push_back(arr[i]);
+        
+        sort(aux.rbegin(), aux.rend());
+        
+        int idx = (n/2);
+        
+        for(auto &a : aux){
+            arr[idx] = a;
+            idx++;
+        }
+    }
+};
+```
+
+Another solution 
+```c++
+class Solution{
+  public:
+    void customSort(int arr[], int n) {
+        // code here  
+        int k = n/2;
+        sort(arr,arr+k);
+        sort(arr+k, arr + n, greater<int>()); 
+    }
+};
+```c++
+
+# [Minimum Swaps to Sort](https://practice.geeksforgeeks.org/problems/minimum-swaps/1?utm_source=geeksforgeeks&utm_medium=ml_article_practice_tab&utm_campaign=article_practice_tab)
+```c++
+
+```
