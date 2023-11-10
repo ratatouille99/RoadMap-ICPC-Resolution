@@ -383,5 +383,64 @@ class Solution{
 
 # [Minimum Swaps to Sort](https://practice.geeksforgeeks.org/problems/minimum-swaps/1?utm_source=geeksforgeeks&utm_medium=ml_article_practice_tab&utm_campaign=article_practice_tab)
 ```c++
+class Solution 
+{
+    public:
+    //Function to find the minimum number of swaps required to sort the array. 
+	int minSwaps(vector<int>&nums)
+	{
+	    vector<pair<int,int>>idx;
+	    int cont = 0;
+	    
+	    for(int i = 0; i < nums.size(); i++) idx.push_back({nums[i], i});
+	    
+	    sort(idx.begin(), idx.end());
+	    
+	    for(int i = 0; i < nums.size(); i++){
+	        if(i != idx[i].second){
+	            cont++;
+	            swap(idx[i], idx[idx[i].second]);
+	            i--;
+	        }
+	    }
+	    
+	    return cont;
+	}
+};
+```
 
+# [Bitonic Generator Sort](https://practice.geeksforgeeks.org/problems/bitonic-generator-sort3343/1?utm_source=geeksforgeeks&utm_medium=ml_article_practice_tab&utm_campaign=article_practice_tab)
+```c++
+class Solution{
+	
+	
+	public:
+	  
+	void bitonicGenerator(int arr[], int n)
+	{
+		vector<int>odds, even;
+		
+		for(int i = 0; i < n; i++){
+		    if(i % 2) odds.push_back(arr[i]);
+		    else even.push_back(arr[i]);
+		}
+		
+		sort(odds.rbegin(), odds.rend());
+		sort(even.begin(), even.end());
+		
+		int i = 0;
+		
+		for(int x : even){
+		    arr[i] = x;
+		    i++;
+		}
+		
+		for(int x : odds){
+		    arr[i] = x;
+		    i++;
+		}
+	}
+		 
+
+};
 ```
