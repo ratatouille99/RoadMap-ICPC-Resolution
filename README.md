@@ -8,4 +8,63 @@ The links to the exercises are inside the file and also in the header of the fil
 ## LINK OF ROADMAP
 [ROADMAP](https://docs.google.com/spreadsheets/d/1yrlqsx18S8H3f-kIQxv9x4GiY9nWaQ84/edit?usp=sharing&ouid=115071307096248007934&rtpof=true&sd=true)
 
-## TYPICAL OUTPUES/INPUTS ROUTINES
+## TYPICAL OUTPUTS/INPUTS ROUTINES
+
+- The number of test cases is given in the first line of the input.
+```c++
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main(){
+    int t{};
+    cin>>t;
+    
+    while(t--){
+        int a{}, b{};
+        cin>>a>>b;
+        
+        cout<<a<<' '<<b<<endl;
+    }
+    
+    return 0;
+}
+```
+
+
+- The multiple test cases are terminated by special values (usually zeroes).
+```c++
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main(){
+    int a{}, b{};
+    
+    while(cin>>a>>b, (a||b)){
+        cout<<a<<' '<<b<<endl;
+    }
+    
+    return 0;
+}
+```
+
+
+- The multiple test cases are terminated by the EOF (end-of-file) signal.
+```c++
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main(){
+    int a{}, b{};
+    
+    while(cin>>a>>b){
+        cout<<a<<' '<<b<<endl;
+    }
+    
+    return 0;
+}
+```
+
+
