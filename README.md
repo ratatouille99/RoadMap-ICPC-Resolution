@@ -10,7 +10,7 @@ The links to the exercises are inside the file and also in the header of the fil
 
 ## TYPICAL OUTPUTS/INPUTS ROUTINES
 
-- The number of test cases is given in the first line of the input.
+# - The number of test cases is given in the first line of the input.
 ```c++
 #include <bits/stdc++.h>
 
@@ -32,7 +32,7 @@ int main(){
 ```
 
 
-- The multiple test cases are terminated by special values (usually zeroes).
+# - The multiple test cases are terminated by special values (usually zeroes).
 ```c++
 #include <bits/stdc++.h>
 
@@ -50,7 +50,7 @@ int main(){
 ```
 
 
-- The multiple test cases are terminated by the EOF (end-of-file) signal.
+# - The multiple test cases are terminated by the EOF (end-of-file) signal.
 ```c++
 #include <bits/stdc++.h>
 
