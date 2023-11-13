@@ -1,25 +1,20 @@
 # [Kadane's Algorithm](https://practice.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1)
 
 ```c++
-class Solution {
- public:
-  int findDuplicate(vector<int>& nums) {
-    int slow = nums[nums[0]];
-    int fast = nums[nums[nums[0]]];
-
-    while (slow != fast) {
-      slow = nums[slow];
-      fast = nums[nums[fast]];
+class Solution{
+    public:
+    long long maxSubarraySum(int arr[], int n){
+        long long maxSum = INT_MIN, actSum = 0;
+        
+        for(int i = 0; i < n; i++){
+            actSum += arr[i];
+            
+            if(maxSum < actSum) maxSum = actSum;
+            
+            if(actSum < 0) actSum = 0;
+        }
+        
+        return maxSum;
     }
-
-    slow = nums[0];
-
-    while (slow != fast) {
-      slow = nums[slow];
-      fast = nums[fast];
-    }
-
-    return slow;
-  }
 };
 ```
