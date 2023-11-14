@@ -51,26 +51,4 @@ class Solution{
     }
 
 };
-
-//{ Driver Code Starts.
-
-int main() {
-    
-    long long T;
-    cin >> T;
-    
-    while(T--){
-        long long N;
-        cin >> N;
-        
-        long long A[N];
-        for(long long i = 0;i<N;i++){
-            cin >> A[i];
-        }
-        Solution obj;
-        cout << obj.inversionCount(A,N) << endl;
-    }
-    
-    return 0;
-}
 ```
