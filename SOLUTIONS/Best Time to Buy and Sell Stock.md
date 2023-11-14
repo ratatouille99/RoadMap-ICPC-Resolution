@@ -17,3 +17,20 @@ public:
     }
 };
 ```
+
+### Another possible solution
+```c++
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        int sumMax = 0, sumAct = prices[0];
+
+        for(int i = 1; i < prices.size(); i++){
+            sumAct = min(sumAct, prices[i]);
+            sumMax = max(sumMax, prices[i] - sumAct);
+        }
+
+        return sumMax;
+    }
+};
+```
