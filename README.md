@@ -1,5 +1,5 @@
 <h3 align="center">
-    <img src="https://foundation.icpc.global/wp-content/uploads/2023/05/2023-icpc-foundation-logo-3c@300.png" width="100" alt="Logo"/><br/>
+    <img src="https://foundation.icpc.global/wp-content/uploads/2023/05/2023-icpc-foundation-logo-3c@300.png" width="1000" alt="Logo"/><br/>
 </h3>
 
 # RoadMap-Resolution
