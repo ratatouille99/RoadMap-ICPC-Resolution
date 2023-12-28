@@ -6,7 +6,7 @@ within various contexts such as computer science, social networks, transportatio
 There are different ways to store graphs, each with its own advantages and disadvantages in terms of efficiency and ease of accessing information. 
 Some common ways to store graphs include:
 
-Adjacency Matrix: It is a two-dimensional array where rows and columns represent the nodes of the graph. If node i is connected to node j,
+## Adjacency Matrix: It is a two-dimensional array where rows and columns represent the nodes of the graph. If node i is connected to node j,
 then the value at position (i, j) (or (j, i) if the graph is undirected) will be 1 or some weight associated with the connection. 
 This representation is efficient for dense graphs but may be inefficient in terms of space for sparse graphs.
 ```c++
