@@ -3,7 +3,8 @@ A graph is a mathematical structure consisting of vertices (nodes) and edges (co
 Graphs are used to model a wide range of real-world systems, networks, and relationships, enabling the study of connections, paths, and properties 
 within various contexts such as computer science, social networks, transportation systems, and more.
 
-There are different ways to store graphs, each with its own advantages and disadvantages in terms of efficiency and ease of accessing information. Some common ways to store graphs include:
+There are different ways to store graphs, each with its own advantages and disadvantages in terms of efficiency and ease of accessing information. 
+Some common ways to store graphs include:
 
 Adjacency Matrix: It is a two-dimensional array where rows and columns represent the nodes of the graph. If node i is connected to node j,
 then the value at position (i, j) (or (j, i) if the graph is undirected) will be 1 or some weight associated with the connection. 
