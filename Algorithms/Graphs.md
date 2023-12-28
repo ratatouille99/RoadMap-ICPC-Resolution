@@ -6,7 +6,8 @@ within various contexts such as computer science, social networks, transportatio
 There are different ways to store graphs, each with its own advantages and disadvantages in terms of efficiency and ease of accessing information. 
 Some common ways to store graphs include:
 
-## Adjacency Matrix: It is a two-dimensional array where rows and columns represent the nodes of the graph. If node i is connected to node j,
+## Adjacency Matrix: 
+It is a two-dimensional array where rows and columns represent the nodes of the graph. If node i is connected to node j,
 then the value at position (i, j) (or (j, i) if the graph is undirected) will be 1 or some weight associated with the connection. 
 This representation is efficient for dense graphs but may be inefficient in terms of space for sparse graphs.
 ```c++
@@ -53,7 +54,8 @@ int main() {
 }
 ```
 
-Adjacency List: Consists of a list of links for each node in the graph. Each node has a list of its neighboring nodes or connections. 
+## Adjacency List: 
+Consists of a list of links for each node in the graph. Each node has a list of its neighboring nodes or connections. 
 This data structure is efficient for sparse graphs since it only stores information about existing connections but may be less efficient 
 for finding specific connections in dense graphs.
 ```c++
@@ -96,7 +98,8 @@ int main() {
 }
 ```
 
-Edge List: Stores information about each edge or connection in the graph. Each element of the list contains information about 
+## Edge List: 
+Stores information about each edge or connection in the graph. Each element of the list contains information about 
 the connected nodes and possibly some additional data like the weight of the edge. This structure is useful for algorithms 
 that need to access all the edges of the graph.
 ```c++
@@ -137,7 +140,8 @@ int main() {
 }
 ```
 
-Dictionary of Dictionaries (or Dictionary of Lists): It is a more flexible data structure that can be combined with other 
+##Dictionary of Dictionaries (or Dictionary of Lists): 
+It is a more flexible data structure that can be combined with other 
 structures to store graph information. For instance, a dictionary of dictionaries could use a dictionary where keys are nodes 
 and values are dictionaries representing outgoing connections from that node, or they could be adjacency lists instead of dictionaries.
 ```c++
