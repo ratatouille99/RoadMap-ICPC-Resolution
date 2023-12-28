@@ -140,7 +140,7 @@ int main() {
 }
 ```
 
-##Dictionary of Dictionaries (or Dictionary of Lists): 
+## Dictionary of Dictionaries (or Dictionary of Lists): 
 It is a more flexible data structure that can be combined with other 
 structures to store graph information. For instance, a dictionary of dictionaries could use a dictionary where keys are nodes 
 and values are dictionaries representing outgoing connections from that node, or they could be adjacency lists instead of dictionaries.
